@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aasha Carmel J | Full Stack Developer Portfolio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#07070a;color:#f5f7fb;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.nav{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(7,7,10,.78);backdrop-filter:blur(16px);border-bottom:1px solid #22232b}
+.nav-inner{max-width:1100px;margin:auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:20px}
+.logo span{color:#8b5cf6}
+.nav-links{display:flex;gap:22px;font-size:14px;color:#b9bbc5}
+.nav-links a:hover{color:#fff}
+.hero{min-height:100vh;display:flex;align-items:center;max-width:1100px;margin:auto;padding:120px 22px 70px}
+.badge{display:inline-block;border:1px solid #30313b;background:#111219;color:#bfc4ff;border-radius:999px;padding:7px 13px;font-size:13px;margin-bottom:20px}
+h1{font-size:clamp(44px,8vw,82px);line-height:1.02;letter-spacing:-3px;max-width:850px}
+.gradient{background:linear-gradient(90deg,#fff,#a78bfa,#60a5fa);-webkit-background-clip:text;color:transparent}
+.hero p{max-width:680px;color:#a8abb7;font-size:18px;margin:24px 0}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 18px;border-radius:10px;border:1px solid #30313b;font-weight:700;font-size:14px}
+.btn.primary{background:#fff;color:#08080a;border-color:#fff}
+.btn:hover{transform:translateY(-2px)}
+section{max-width:1100px;margin:auto;padding:90px 22px}
+.section-title{font-size:32px;margin-bottom:10px}
+.section-sub{color:#898c98;margin-bottom:32px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(145deg,#111218,#0c0c10);border:1px solid #252630;border-radius:18px;padding:24px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#51477d}
+.card h3{margin-bottom:10px}
+.card p{color:#9da0ac;font-size:14px}
+.tag{display:inline-block;margin-top:16px;margin-right:6px;padding:5px 9px;border-radius:999px;background:#181922;color:#c8c9d3;font-size:12px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.skill{margin:8px 0;color:#d7d8df}
+.bar{height:7px;background:#1b1c23;border-radius:20px;overflow:hidden;margin-top:5px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,#8b5cf6,#3b82f6);border-radius:20px}
+.timeline{border-left:1px solid #30313b;padding-left:22px}
+.item{margin-bottom:25px}
+.item small{color:#8f92a0}
+.contact{text-align:center;background:linear-gradient(145deg,#101016,#0b0b0e);border:1px solid #252630;border-radius:22px;padding:55px 25px}
+footer{text-align:center;color:#666976;padding:30px;font-size:13px}
+@media(max-width:800px){.grid,.about{grid-template-columns:1fr}.nav-links{display:none}h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner">
+<a class="logo" href="#home">Aasha<span>.</span></a>
+<div class="nav-links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<header class="hero" id="home">
+<div>
+<div class="badge">Computer Science Engineering Student • Aspiring Full Stack Developer</div>
+<h1>Building <span class="gradient">useful digital experiences</span> with code.</h1>
+<p>I’m Aasha Carmel J, a Computer Science Engineering student passionate about web development, practical software solutions and learning modern technologies.</p>
+<div class="buttons">
+<a class="btn primary" href="#projects">View Projects</a>
+<a class="btn" href="mailto:aasha.carmel@gmail.com">Contact Me</a>
+<a class="btn" href="https://github.com/AashaCarmel" target="_blank">GitHub</a>
+<a class="btn" href="https://linkedin.com/in/aasha-carmel-j-23435a33b" target="_blank">LinkedIn</a>
+</div>
+</div>
+</header>
+
+<section id="about">
+<h2 class="section-title">About Me</h2><p class="section-sub">A quick introduction</p>
+<div class="about">
+<div class="card"><h3>My Goal</h3><p>To start my career in a technical role where I can apply my web development skills, build efficient applications and continuously learn new technologies.</p></div>
+<div class="card"><h3>Education</h3><p><b>B.E. Computer Science and Engineering</b><br>NPR College of Engineering and Technology<br>CGPA: 8.1</p><br><p><b>Diploma in Electrical & Electronics Engineering</b><br>Percentage: 84%</p></div>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="section-title">Technical Skills</h2><p class="section-sub">Technologies I have worked with</p>
+<div class="grid">
+<div class="card"><h3>Frontend</h3><div class="skill">HTML5<div class="bar"><i style="width:90%"></i></div></div><div class="skill">CSS3<div class="bar"><i style="width:85%"></i></div></div><div class="skill">JavaScript<div class="bar"><i style="width:75%"></i></div></div><div class="skill">React.js<div class="bar"><i style="width:70%"></i></div></div></div>
+<div class="card"><h3>Backend & Database</h3><div class="skill">Python<div class="bar"><i style="width:80%"></i></div></div><div class="skill">Django<div class="bar"><i style="width:75%"></i></div></div><div class="skill">MySQL<div class="bar"><i style="width:70%"></i></div></div></div>
+<div class="card"><h3>Tools</h3><p>VS Code</p><span class="tag">Vite</span><span class="tag">Figma</span><span class="tag">Git</span><span class="tag">GitHub</span></div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Featured Projects</h2><p class="section-sub">Projects from my academic and practical work</p>
+<div class="grid">
+<div class="card"><h3>Reflex Tester</h3><p>Arduino-based reflex testing game designed to measure reaction time and display live scores.</p><span class="tag">Arduino</span><span class="tag">Embedded C/C++</span><span class="tag">IoT</span></div>
+<div class="card"><h3>Online Food Ordering System</h3><p>Web-based food ordering application developed using Django for browsing food items and placing orders.</p><span class="tag">Python</span><span class="tag">Django</span><span class="tag">MySQL</span></div>
+<div class="card"><h3>UPI Anomaly Detection</h3><p>Machine learning solution designed to identify suspicious UPI transactions by analysing transaction patterns.</p><span class="tag">Machine Learning</span><span class="tag">Python</span><span class="tag">Anomaly Detection</span></div>
+</div>
+</section>
+
+<section id="experience">
+<h2 class="section-title">Experience</h2><p class="section-sub">Internship experience</p>
+<div class="timeline">
+<div class="item"><h3>UI/UX Design Intern — Wiltech Solutions, Madurai</h3><small>Jun 2026 – Jul 2026</small><p>Designed user-friendly interfaces and wireframes for web applications, including responsive layouts and real-world design projects.</p></div>
+<div class="item"><h3>Robotics & IoT Intern — Smartant Technologies Pvt. Ltd., Madurai</h3><small>Jun 2025 – Jul 2025</small><p>Worked on Arduino-based IoT applications using sensors and embedded systems for real-time monitoring solutions.</p></div>
+</div>
+</section>
+
+<section>
+<div class="contact" id="contact"><h2 class="section-title">Let’s Connect</h2><p class="section-sub">Open to opportunities in web development and full-stack development.</p><div class="buttons" style="justify-content:center"><a class="btn primary" href="mailto:aasha.carmel@gmail.com">aasha.carmel@gmail.com</a><a class="btn" href="https://github.com/AashaCarmel" target="_blank">GitHub Profile</a><a class="btn" href="https://linkedin.com/in/aasha-carmel-j-23435a33b" target="_blank">LinkedIn Profile</a></div></div>
+</section>
+<footer>© 2026 Aasha Carmel J • Built with HTML & CSS</footer>
+</body>
+</html>
